@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<title>CMS's website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .toTop {
+    width: 46px;
+    height: 46px;
+    display: none;
+    position: fixed;
+    background: url(https://sites.google.com/site/nvnhan2910/images/toTop.png) 0 0 no-repeat;
+    cursor: pointer;
+    top: 70%;
+    right: 10px;
+    opacity: 0.5;
+    -ms-filter: "alpha(opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    z-index: 999;
+}
+  a{text-decoration: none;}
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img  src="logo1.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Giới thiệu hệ thống CMS</b></h4>
+    <!-- <p class="w3-text-grey">Template by W3.CSS</p> -->
+  </div>
+  <div class="w3-bar-block">
+    <a href="#cbtainguyen" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-text-grey"><i class="fa fa-th-large fa-fw w3-margin-right"></i>CHUẨN BỊ TÀI NGUYÊN</a> 
+    <a href="#hd" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw w3-margin-right"></i>HƯỚNG DẪN</a> 
+    <a href="#lienhe" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-card fa-fw w3-margin-right" aria-hidden="true"></i>LIÊN HỆ</a>
+  </div>
+  <!-- <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="logo1.png" style="width:100px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Giới thiệu hệ thống CMS</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <!-- <span class="w3-margin-right">Filter:</span>  -->
+      <button class="w3-button w3-teal"><a href="#gioithieuchung">Home</a></button>
+      <button class="w3-button w3-teal"><i class="fa fa-book w3-margin-right"></i><a href="#hd">Hướng dẫn </a></button>
+      <button class="w3-button w3-teal w3-hide-small"><i class="fa fa-address-book w3-margin-right"></i><a href="#lienhe">Liên hệ</a></button>
+      <!-- <button class="w3-button w3-teal w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i><a href="#lienhe">Liên hệ</a></button> -->
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  
+    <div class="w3-first w3-container">
+      
+      <div class="w3-container w3-white">
+        <p id="gioithieuchung"style="color:#11978b"><b>Giới thiệu chung</b></p>
+        <p>Hệ thống chấm thi CMS (Contest Management System) là một hệ thống chấm bài mã nguồn mở được sử dụng trong nhiều kỳ thi lập trình quốc tế.
+CMS có thể được tiến hành kiểm tra lập trình trên các ngôn ngữ: Java, Pascal, C, C++, C#, Python2, Python3, Rust, Haskell.<a href="Huong dan su dung he thong CMS.pdf">(Hướng dẫn chi tiết)</a></p>
+
+      </div>
+    </div>
+ <div class="w3-first w3-container">
+      
+      <div class="w3-container w3-white">
+        <p id="cbtainguyen" style="color:#11978b"><b>1. Chuẩn bị tài nguyên cho cuộc thi</b></p>
+        <ul>
+          <li>Làm đề và bộ test
+              <ul><li>Tạo các câu hỏi cho cuộc thi: các câu hỏi phải được định dạng .pdf</li> 
+                <li>Bộ test: Tương ứng với mỗi câu hỏi là 1 bộ test, trong đó mỗi một test bao gồm dữ liệu vào được bắt đầu input0, input1, …,và dữ liệu ra được bắt đầu output0, output1, …</li>
+            </ul>
+    </li>
+        </ul>
+        <ul>
+          <li>Tạo danh sách thí sinh thi: Tạo trên bảng tính excel gồm các trường thông tin: Username, FirstName, LastName,  Email, Password</li>
+        </ul>
+</p>
+      </div>
+    </div>
+  <div class="w3-first w3-container">
+      
+      <div class="w3-container w3-white">
+        <p id="hd" style="color:#11978b"><b>2. Hướng dẫn thí sinh làm bài trên hệ thống</b></p>
+        <ul>
+          <li style="list-style:none; font-weight: bolder;"> 2.1 Đăng nhập hệ thống </li>
+          <img src="1dangnhap.png">
+              
+        </ul>
+        <ul>
+          <li>Vào địa chỉ <a href="http://hnmucms.camdvr.org" style="color:blue;"> http://hnmucms.camdvr.org </a> hoặc <a href="http://14.162.209.87" style="color:blue;">http://14.162.209.87</a></li>
+          <li>Tên đăng nhập: Số báo danh</li>
+          <li>Mật khẩu: Được gửi qua email cá nhân của thí sinh</li>
+        </ul>
+        <ul>
+          <li style="list-style:none; font-weight: bolder;"> 2.2 Tham gia cuộc thi </li>
+          <img src="2thamgiacuocthi.png">
+              
+        </ul>
+        <ul>
+          <li>Tương tự lúc đăng kí tham gia cuộc thi, khi cuộc thi bắt đầu tính thời gian làm bài, ở phía bên phải của trang sẽ hiển thị phần Cuộc thi đang diễn ra, nhấn vào nút Tham gia ngay để bắt đầu làm bài</li>
+          
+        </ul>
+        <ul>
+          <li style="list-style:none; font-weight: bolder;"> 2.3 Thí sinh xem thông tin tổng quan về cuộc thi </li>
+          <img src="3tongquancuocthi.png">
+              
+        </ul>
+        <ul>
+          <li style="list-style-type: none;">Trên màn hình tổng quan về cuộc thi có các thông tin sau:</li>
+            <ol><li>Tên cuộc thi</li>
+              <li>Thời gian còn lại (giờ: phút: giây)</li>
+              <li>Nút đăng xuất</li>
+              <li>Danh sách các bài tập trong kỳ thi</li>
+              <li>Thông tin thời điểm bắt đầu và kết thúc</li>
+            </ol>
+          
+        </ul>
+        <ul>
+          <li style="list-style:none; font-weight: bolder;"> 2.4 Đặt câu hỏi với Ban tổ chức </li>
+          <img src="4cauhoibantochuc.png">
+              
+        </ul>
+        <ul>
+          <li>Chức năng này chỉ hiển thi khi được cho phép. Thí sinh có thể vào phần Communication và đặt câu hỏi với Ban tổ chức. </li>
+          
+        </ul>
+        <ul>
+          <li style="list-style:none; font-weight: bolder;"> 2.5 Thông tin về một bài tập trong cuộc thi </li>
+          <img src="5thongtinbaitap.png">
+              
+        </ul>
+        <ul>
+          <li>Với mỗi bài tập trong cuộc thi (ở phần bên trái của màn hình), nhấn vào Statement để tải đề bài và xem thông tin của bài. </li>
+          <li style="list-style-type: none;">Trên màn hình thông tin của mỗi bài của thông tin sau:</li>
+            <ol><li>Menu Statement của bài</li>
+              <li>Tên bài tập</li>
+              <li>Nút tải đề bài</li>
+              <li>Giới hạn thời gian, giới hạn bộ nhớ, và lệnh biên dịch với mỗi ngôn ngữ</li>
+              
+            </ol>
+        </ul>
+        <ul>
+          <li style="list-style:none; font-weight: bolder;"> 2.6 Nộp bài và xem kết quả </li>
+          <img src="6nopbaixemkq.png">
+              
+        </ul>
+        <ul>
+                  
+            <ol><li>Nhấn vào Submissions của bài tập để nộp bài</li>
+              <li>Chọn file mã nguồn và nhấn nút Submit để nộp bài</li>
+              <li>Có thể nhấn vào nút Download để tải về lại mã nguồn đã nộp</li>
+              <li>Nhấn vào details để xem thông tin chi tiết về kết quả của bài làm</li>
+              
+            </ol>
+        </ul>
+        <ul>
+          <li style="list-style:none; font-weight: bolder;"> 2.7 Một số phản hồi của hệ thống khi nộp bài </li>
+          <table >
+  <tr >
+    <th>Thông báo</th>
+    <th>Ý Nghĩa</th>
+    
+  </tr>
+  <tr>
+    <td>Compilation succeeded</td>
+    <td>Biên dịch thành công</td>
+    
+  </tr>
+  <tr>
+    <td>Output is partially correct</td>
+    <td>Kết quả chỉ đúng một phần</td>
+   
+  </tr>
+  <tr>
+    <td>Compilation failed</td>
+    <td>Biên dịch gặp lỗi</td>
+   
+  </tr>
+  <tr>
+    <td>Execution timed out</td>
+    <td>Chạy quá thời gian</td>
+    
+  </tr>
+  <tr>
+    <td>Output isn't correct</td>
+    <td>Kết quả sai</td>
+  
+  </tr>
+  <tr>
+    <td>File too big</td>
+    <td>Source code quá lớn</td>
+    
+  </tr>
+  <tr>
+    <td>Invalid format</td>
+    <td>Định dạng không hợp lệ</td>
+    
+  </tr>
+</table>
+          <p id="xemkq" style="color:#11978b"><b>3. Xem bảng xếp hạng</b></p>
+          <li>Vào địa chỉ <a href="http://hnmucms.camdvr.org:8080/contest/2/ranking_ph " style="color:blue;"> http://hnmucms.camdvr.org:8080/contest/2/ranking_ph </a> hoặc <a href="http://14.162.209.87:8080/contest/2/ranking_ph " style="color:blue;">http://14.162.209.87:8080/contest/2/ranking_ph </a></li>
+      </div>
+    </div>
+  
+  
+  <a class='toTop' href='#toTop' title='Lên trên'></a>
+  
+  <div class="w3-container w3-teal w3-margin-top" >
+   <div class="row">
+  <div>
+    <h5 style="margin-top:20px;"id="lienhe">Khoa Khoa học Tự nhiên và Công nghệ</h5>
+    <hr style="width:50%; margin-top: 5px;">
+    <div >
+      
+      <i class="fa fa-location-arrow" aria-hidden="true">  </i>   &nbsp;&nbsp;  Số 98, Dương Quảng Hàm, Phường Quan Hoa, Quận Cầu Giấy, Hà Nội  </div>
+      <i class="fa fa-info-circle" aria-hidden="true"></i> &nbsp;&nbsp;<a href="https://fst.hnmu.edu.vn/">https://fst.hnmu.edu.vn/ </a>  </div>
+    
+     <div><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp;&nbsp;(+84) 24.3833.6075     </div>
+    
+      
+    
+     
+      <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:cntt@hnmu.edu.vn">cntt@hnmu.edu.vn</a>
+    </div>
+  </div></div>
+<p>
+  <p>
+<!-- End page content -->
+</div>
+<p>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js' type='text/javascript'></script>
+  <!-- Khai báo địa chỉ của thư viện JQuery -->
+  <script type='text/javascript'>
+    // Java scroll to top
+
+    $(function () {
+      $.fn.scrollToTop = function () {
+        $(this).hide().removeAttr("href");   // Xóa thuộc tính "href" trong phần HTML
+        if ($(window).scrollTop() != "0") { $(this).fadeIn("slow") }
+        var scrollDiv = $(this);
+        $(window).scroll(function () {   // Sự kiện trượt trang web
+          if ($(window).width() < 1100) {
+            $(".toTop").hide();
+            return;
+          }
+          if ($(document).scrollTop() < $(window).height()) {
+            $(".toTop").fadeOut("slow");   // ẩn nút
+          } else {
+            $(".toTop").fadeIn("slow");    // Hiện nút
+          }
+        });
+        $(this).click(function () { // Sự kiện click nút
+          $("html, body").animate({ scrollTop: 0 }, "slow")   // Tạo hiệu ứng chuyển mượt
+        })
+      }
+    });
+    $(function () { $(".toTop").scrollToTop(); });
+
+    // Khi resize cửa sổ trình duyệt
+    $(window).resize(function () {
+      if ($(window).width() < 1100) {
+        $(".toTop").hide();
+        return;
+      }
+    });
+  </script>
+</body>
+</html>
